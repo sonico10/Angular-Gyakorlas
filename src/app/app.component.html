@@ -1,0 +1,35 @@
+<nz-layout>
+  <nz-header>
+    <div class="logo">StickPedia</div>
+    <ul nz-menu [nzTheme]="'dark'" nzMode="horizontal">
+      <li nz-menu-item nzSelected>
+        <a routerLink="/store">
+          <span nz-icon nzType="shop" nzTheme="fill"></span>
+          Store
+        </a>
+      </li>
+      <li nz-menu-item>
+        <a routerLink="/inventory">
+          <span nz-icon nzType="shopping" nzTheme="fill"></span>
+          Inventory
+        </a>
+      </li>
+      <li nz-menu-item>
+        <a routerLink="/character">
+          <span nz-icon nzType="radar-chart" nzTheme="outline"></span>
+          Character
+        </a>
+      </li>
+      <li nz-menu-item nzDisabled="">
+        <a routerLink="/combat">
+          <span nz-icon nzType="exclamation-circle" nzTheme="outline"></span>
+          Combat
+        </a>
+      </li>
+    </ul>
+  </nz-header>
+
+  <nz-content>
+    <router-outlet></router-outlet>
+  </nz-content>
+</nz-layout>
